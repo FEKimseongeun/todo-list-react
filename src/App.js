@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import styled, { css } from "styled-components";
+import TodoForm from "./components/todoForm";
+import FilterBtns from "./components/filterBtnsWrap";
+import TodoListWrap from "./components/todoListWrap";
+const Container = styled.div`
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 30px;
+`;
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Container>
+        <TodoForm />
+        <FilterBtns />
+        <TodoListWrap />
+      </Container>
+    </React.Fragment>
   );
 }
 
