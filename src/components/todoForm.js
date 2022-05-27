@@ -191,7 +191,7 @@ const TodoForm = (props) => {
             />
             <span className="tui-ico-date"></span>
           </div>
-          <div id="wrapper" style={{ marginTop: -1 }} ref={dateWrapper}></div>
+          {/*<div id="wrapper" style={{ marginTop: -1 }} ref={dateWrapper}></div>*/}
         </DeadlineWrap>
 
         <TodoInput
